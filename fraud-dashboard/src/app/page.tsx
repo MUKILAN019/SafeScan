@@ -55,9 +55,9 @@ export default function Home() {
           </div>
         ) : fraudData ? (
           <>
-            <FraudTable fraudulentApps={fraudData.fraudulent_apps} />
-            <FraudUrlTable fraudulentUrls={fraudData.fraudulent_urls} />
-            <FraudTrendBarChart fraudTrends={fraudData.fraud_trends_30_days}/>
+            <FraudTable  />
+            <FraudUrlTable  />
+            <FraudTrendBarChart />
           </>
         ) : (
           <p className="text-center text-gray-500">No data available.</p>
