@@ -14,7 +14,7 @@ if (!EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !EMAILJS_PUBLIC_KEY || !ADMIN
 }
 
 
-const socket = io("http://localhost:3001", { transports: ["websocket"] });
+const socket = io("http://safescan-production.up.railway.app/", { transports: ["websocket"] });
 
 const FraudPage: React.FC = () => {
   const [fraudulentApps, setFraudulentApps] = useState<any[]>([]);
@@ -66,7 +66,7 @@ const FraudPage: React.FC = () => {
 
       const result = await response.json();
       if (!response.ok) {
-        console.error("❌ API Error Response:", result);
+        console.error("API Error Response:", result);
         throw new Error(result.error || "Failed to perform action");
       }
 
