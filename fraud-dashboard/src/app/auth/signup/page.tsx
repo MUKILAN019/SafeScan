@@ -73,6 +73,12 @@ const SignUpPage = () => {
             <button type="submit" className="w-full mt-4 bg-indigo-600 text-white p-2 rounded-md font-bold hover:bg-indigo-500">
               Register
             </button>
+            <p className="text-center text-sm text-gray-700 mt-4">
+              Having an account already?{" "}
+              <a href="/auth/signin" className="font-bold text-indigo-500 hover:underline">
+                Login
+              </a>
+            </p>
           </fieldset>
         </form>
       </div>
